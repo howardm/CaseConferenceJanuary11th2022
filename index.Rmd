@@ -1,0 +1,713 @@
+---
+title: "Thoracic Case Conference"
+subtitle: ""
+session: ""
+author: "Howard Mann, M.D."
+institute: "University of Utah | Department of Radiology and Imaging Sciences"
+date: "January 11th, 2022"
+output:
+  xaringan::moon_reader:
+    seal: false
+    css: 
+        - myextra.css
+        - xaringan-themer.css
+        - hygge
+        - ninjutsu
+        - width.css
+    yolo: false
+    lib_dir: libs
+    self_contained: false
+    nature:
+      titleSlideClass: [center, middle]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+      ratio: "16:9"
+      beforeInit: "macros.js"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      navigation:
+        scroll: false
+      
+---
+
+```{r setup, include = FALSE}
+options(htmltools.dir.version = FALSE)
+library(knitr)
+library(metathis)
+library(xaringanExtra)
+library(showtext)
+library(kableExtra)
+library(icons)
+opts_chunk$set(echo=FALSE)
+
+# set engines
+knitr::knit_engines$set("markdown")
+
+xaringanExtra::use_panelset()
+# xaringanExtra::use_share_again()
+xaringanExtra::use_tile_view()
+
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer) 
+style_mono_light(base_color = "#23395b")
+```
+
+```{r meta, echo=FALSE}
+meta() %>%
+  meta_general(
+    description = "A thoracic case conference",
+  ) %>% 
+  meta_name("github-repo" = "howardm") %>% 
+  meta_social(
+    title = "Case Conference",
+    url = "https://howardm.github.io/CaseConferenceJanuary11th2022",
+    image = "http://chestradiologists.org/twitter-card3.jpg",
+    image_alt = "",
+    og_type = "website",
+    og_author = "Howard Mann",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@howardm19"
+  )
+```  
+
+
+class: inverse, center, middle
+
+### Thoracic Case Conference
+
+### *Things go the wrong way*
+
+<img src="images/circle-cropped.png" width="150px" />
+
+### .blue[Howard Mann, M.D.]
+
+
+```{r icon-style}
+icon_style(fontawesome("link"), scale = 1, fill = "white")
+```
+howardmann.us
+
+
+### January 11th, 2022
+
+
+---
+class: center, middle
+
+
+![:scale 100%](images/Instructions.jpg)
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+layout: true
+
+background-image: url(images/circle-cropped.png)
+background-position: 98% 1%
+background-size: 4%
+
+---
+
+
+class: inverse
+name: case1
+
+.blue[Case 1]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[A patient in the Neurosurgical I.C.U.]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+Day 7 
+
+.center[![:scale 55%](images/01.jpg)]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging II]
+
+<br>
+
+.pull-left[![:scale 82%](images/01a.jpg)]
+
+.pull-right[![:scale 100%](images/01b.jpg)]
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+class: inverse
+name: case2
+
+.blue[Case 2]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[A patient in an I.C.U. with new fever and leukocytosis]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+.center[![:scale 65%](images/02a.jpg)]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging II]
+
+.center[![:scale 60%](images/02b.jpg)]
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case3
+
+.blue[Case 3]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[Imaging in an outpatient clinic. 
+
+A patient with a persistent cough, indolent fever, and putrid sputum.]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+.center[![:scale 85%](images/03a.jpg)]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging II]
+
+.pull-left[
+
+<br>
+
+CT after radiography
+
+![:scale 85%](images/03b.jpg)]
+
+.pull-right[
+
+<br>
+
+3 months later
+
+![:scale 85%](images/03c.jpg)]
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case4
+
+.blue[Case 4]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[Imaging in an outpatient clinic. 
+
+A patient with a 2-week cough and low-grade fever]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+.center[![:scale 85%](images/04a.jpg)]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging II]
+
+<br>
+
+.center[![:scale 90%](images/04b.jpg)]
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case5
+
+.blue[Case 5]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[A patient in a long-term-care residential facility.
+
+She has a persistent productive cough, chest pain, and fever.]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+.center[![:scale 60%](images/05a.jpg)]
+
+
+] <!--end of panel-->
+
+
+.panel[.panel-name[Imaging II]
+
+.center[![:scale 50%](images/05b.jpg)]
+
+
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case6
+
+.blue[Case 6]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[A patient imaged in the E.D.]
+
+] <!--end of panel-->
+
+
+
+.panel[.panel-name[Imaging I]
+
+11 a.m.
+
+.center[![:scale 44%](images/06a.jpg)]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging II]
+
+2:15 p.m. A CTPA was performed.
+
+<br>
+
+.pull-left[![:scale 70%](images/06b.jpg)]
+
+.pull-right[![:scale 100%](images/06c.jpg)]
+
+] <!--end of panel-->
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case7
+
+.blue[Case 7]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[A patient with metastatic cancer.
+
+Bedside chest radiography for acute respiratory distress.]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+
+.pull-left[
+
+Current image
+
+![:scale 100%](images/07a.jpg)]
+
+.pull-right[
+
+Prior for comparison
+
+![:scale 92%](images/07b.jpg)]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging II]
+
+<div style="text-align:center;">
+<iframe class="pacsbin"
+         id="case7"
+         src="https://www.pacsbin.com/c/bkjajr61aD?s=61d8c72b2b0cfe01bc97410a&i=61d8c72b2b0cfe01bc974145&ww=952&wc=225&an=false&header=false&notes=false&overlay=false" 
+         style="width: 500px; height: 500px; border: 0;"></iframe>
+</div>
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case8
+
+.blue[Case 8]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[Acute respiratory distress in a hospitalized patient.]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+.center[![:scale 55%](images/08a.jpg)]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging II]
+
+<div style="text-align:center;">
+<iframe class="pacsbin"
+         id="case8"
+         src="https://www.pacsbin.com/c/byBrWp616v?s=61d8d2c12b0cfe01bc9742fa&i=61d8d2c12b0cfe01bc974357&ww=683&wc=65&an=false&header=false&notes=false&overlay=false" 
+         style="width: 500px; height: 500px; border: 0;"></iframe>
+</div>
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case9
+
+.blue[Case 9]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[Acute respiratory distress occurred during an outpatient medical procedure]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+.pull-left[
+
+
+
+![:scale 100%](images/09a.jpg)]
+
+.pull-right[
+
+
+
+![:scale 80%](images/09b.jpg)]
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+class: inverse
+name: case10
+
+.blue[Case 10]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[Cough episodes in the months after bariatric surgery]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+<div style="text-align:center;">
+<iframe class="pacsbin"
+         id="case10"
+         src="https://www.pacsbin.com/c/W1Qb0rAyaP?s=61d8e1282b0cfe01bc9746ab&i=61d8e1282b0cfe01bc9746ac&ww=1775&wc=-495&an=false&header=false&notes=false&overlay=false" 
+         style="width: 500px; height: 500px; border: 0;"></iframe>
+</div>
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case11
+
+.blue[Case 11]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[Sporadic episodes of respiratory distress]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+<div style="text-align:center;">
+<iframe class="pacsbin"
+         id="case11"
+         src="https://www.pacsbin.com/c/byIV9zRkTv?s=61d8dc002b0cfe01bc97449d&i=61d8dc002b0cfe01bc974577&ww=1695&wc=-628&an=false&header=false&notes=false&overlay=false" 
+         style="width: 500px; height: 500px; border: 0;"></iframe>
+</div>
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case12
+
+.blue[Case 12]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[This patient is being evaluated for waxing-and-waning pulmonary nodules.]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+.pull-left[
+
+Current image
+
+![:scale 90%](images/12a.jpg)]
+
+.pull-right[
+
+5 months ago
+
+![:scale 92%](images/12b.jpg)]
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case13
+
+.blue[Case 13]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[Imaging after accidental ingestion of gasoline]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+.center[![:scale 65%](images/13a.jpg)]
+
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging II]
+
+<br>
+
+.center[![:scale 85%](images/13b.jpg)]
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case14
+
+.blue[Case 14]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+Imaging evaluation of a chronic cough
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+.pull-left[
+
+![:scale 100%](images/14a.jpg)]
+
+.pull-right[
+
+.center[![:scale 51%](images/14b.jpg)]]
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case15
+
+.blue[Case 15]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[Cough evaluation in a young child]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging ]
+
+<br>
+
+.center[![:scale 70%](images/15.jpg)]
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+---
+
+class: inverse
+name: case16
+
+.blue[Case 16]
+
+.panelset[
+
+.panel[.panel-name[Clinical Presentation]
+
+.big[A sixteen-year-old with a chronic, intermittent cough and "chest discomfort."]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging I]
+
+<br>
+
+.center[![:scale 80%](images/16.jpg)]
+
+] <!--end of panel-->
+
+.panel[.panel-name[Imaging II]
+
+.pull-left[
+
+![:scale 100%](images/16a.jpg)]
+
+.pull-right[
+
+.center[![:scale 87%](images/16b.jpg)]]
+
+] <!--end of panel-->
+
+
+] <!--end of panelset-->
+
+<!----------------------------- SLIDE BREAK ----------------------------->
+
+```{css echo=FALSE}
+.highlight-last-item > ul > li, 
+.highlight-last-item > ol > li {
+  opacity: 0.2;
+}
+.highlight-last-item > ul > li:last-of-type,
+.highlight-last-item > ol > li:last-of-type {
+  opacity: 1;
+}
+```

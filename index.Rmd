@@ -448,7 +448,7 @@ name: case9
 
 ] <!--end of panel-->
 
-.panel[.panel-name[Imaging I]
+.panel[.panel-name[Imaging]
 
 .pull-left[
 
@@ -483,7 +483,7 @@ name: case10
 
 ] <!--end of panel-->
 
-.panel[.panel-name[Imaging I]
+.panel[.panel-name[Imaging]
 
 <div style="text-align:center;">
 <iframe class="pacsbin"
@@ -514,7 +514,7 @@ name: case11
 
 ] <!--end of panel-->
 
-.panel[.panel-name[Imaging I]
+.panel[.panel-name[Imaging]
 
 <div style="text-align:center;">
 <iframe class="pacsbin"
@@ -545,7 +545,7 @@ name: case12
 
 ] <!--end of panel-->
 
-.panel[.panel-name[Imaging I]
+.panel[.panel-name[Imaging]
 
 .pull-left[
 
@@ -612,11 +612,11 @@ name: case14
 
 .panel[.panel-name[Clinical Presentation]
 
-Imaging evaluation of a chronic cough
+.big[Imaging evaluation of a chronic cough]
 
 ] <!--end of panel-->
 
-.panel[.panel-name[Imaging I]
+.panel[.panel-name[Imaging]
 
 .pull-left[
 
